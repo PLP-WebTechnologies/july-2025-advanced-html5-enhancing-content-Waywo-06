@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Content & Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 2rem;
+      background-color: #f9f9f9;
+    }
+    header, section, footer {
+      margin-bottom: 2rem;
+    }
+    table {
+      width: 50%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    fieldset {
+      margin-bottom: 1.5rem;
+      border: 1px solid #ccc;
+      padding: 1rem;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 0.5rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Galactic Defenders: Team form</h1>
+    <p>Apply to become a member of the Galactic Defenders. The most AWESOME, COOLEST and BEST superhero team!</p>
+  </header>
+
+  <section>
+    <h2>Requirements</h2>
+    <ul>
+      <li>Must have at least one superpower
+(Even if it’s just super-good luck or the ability to always find Wi-Fi.)</li>
+      <li>Able to work in a team
+(No lone wolves—Spidey, Flash, and Star-Lord are all about teamwork.)</li>
+      <li>Own a cool superhero name
+(Because “Dave from Accounting” doesn’t strike fear into villains.)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Table: Superhero Team Information</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Hero name</th>
+          <th>Power</th>
+          <th>Secret identity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Spiderman</td>
+          <td>Crawls walls, Shoots webs, strong</td>
+          <td>Peter Parker</td>
+        </tr>
+        <tr>
+          <td>The Flash</td>
+          <td>Superspeed, can time travel</td>
+          <td>Barry Allen</td>
+        </tr>
+        <tr>
+          <td>Star Lord</td>
+          <td>Combat & Tactical Skills, Energy manipulation </td>
+          <td>Peter Quill</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Embedded Media</h2>
+    <figure>
+      <img src="team-7278740_1280.jpg" alt="Team image" />
+    </figure>
+    <audio controls>
+      <source src="superhero-theme-extended-194335.mp3" type="audio/mp3" />
+    </audio>
+    <video controls width="400">
+      <source src="246856_tiny.mp4" type="video/mp4" />
+      
+    </video>
+  </section>
+
+  <section>
+    <h2>Hero Information Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required minlength="3" placeholder="Your name" />
+
+        <label for="name">Hero Name:</label>
+        <input type="text" id="name" name="name" required minlength="3" placeholder="Your superhero name" />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="example@mail.com" />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color" />
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+
+        <label for="newsletter">Subscribe to team newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" />
+      </fieldset>
+
+      <input type="submit" value="Submit Form" />
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Galactic Defenders Initiative</p>
+  </footer>
+
+</body>
+</html>
